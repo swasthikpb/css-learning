@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car_animation</title>
+    <style>
+    .wheel_a{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        top: 220px;
+        justify-content: center;
+        position: absolute;
+        animation: move 3s ease infinite;
+        animation-direction: alternate;
+        margin-left: 10px;
+        box-shadow: rgb(40, 39, 39) 0px 0px 50px;
+        
+        
+    }
+    @keyframes move {
+            from{
+             left: 10px;  
+            }
+            to{
+                left: 800px;
+                transform: rotate(360deg);
+            }
+        }
+    .rim_a{
+        height: 40px;
+        width: 40px;
+        border-radius: 60%;
+        background-color: silver;
+        align-content: center;
+        left: 30px;
+        top: 30px;
+        position: absolute; 
+        background-image: conic-gradient(rgb(220, 219, 219)0deg 90deg,rgb(255, 8, 8)90deg 180deg,rgb(220, 219, 219)180deg 270deg,red 270deg 360deg); 
+    }
+    .wheel_b{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        left: 150%;
+        top: 220px;
+        justify-content: center;
+        position: absolute;
+        animation: move_b 3s ease infinite;
+        animation-direction: alternate;
+        box-shadow: rgb(40, 39, 39) 0px 0px 50px;
+    
+
+       
+    }
+    @keyframes move_b {
+            from{
+             left: 200px;  
+            }
+            to{
+                left: 1000px;
+                transform: rotate(360deg);
+            }
+        }
+    .rim_b{
+        height: 40px;
+        width: 40px;
+        border-radius: 60%;
+        background-color: silver;
+        align-content: center;
+        left: 30px;
+        top: 30px;
+        position: relative;  
+        background-image: conic-gradient(rgb(220, 219, 219)0deg 90deg,rgb(255, 8, 8)90deg 180deg,rgb(220, 219, 219)180deg 270deg,red 270deg 360deg);
+    }
+    .body_car{
+        height: 80px;
+        width: 300px;
+        background-color: red;
+        top: 170px;
+        left: 0px;
+        justify-content: center;
+        position: relative;
+        border-top-right-radius: 30px;
+        animation: move_body ease infinite 3s;
+        animation-direction: alternate;
+        
+        
+    }
+    @keyframes move_body{
+        from{
+            left: 10px;
+        }
+        to{
+            left: 800px;
+        }
+
+    }
+    .roof {
+	border-bottom: 50px solid ;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 140px;
+	width: 150px;
+    bottom: 100px;
+    position: relative;
+    justify-content: center;
+    animation: move_roof ease infinite 3s;
+    animation-direction: alternate;
+    }
+    @keyframes move_roof{
+        from{
+            left: 10px;
+        }
+        to{
+            left: 800px;
+        }
+    }
+    .window1{
+        height: 40px;
+        width: 40px;
+        background-color: antiquewhite;
+        top: 145px;
+        left: 90px;
+        justify-content: center;
+        position: relative;
+        border-top-right-radius: 10px;
+        
+
+    }
+    .window2{
+        height: 40px;
+        width: 40px;
+        background-color: antiquewhite;
+        top: 105px;
+        left: 20px;
+        justify-content: center;
+        position: relative;
+        
+
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <div class="wheel_a">
+        <div class="rim_a"></div>
+        
+    </div>
+    <div class="wheel_b">
+        <div class="rim_b"></div>
+    </div>
+    <div class="body_car"></div>
+    <div class="roof">
+        <div class="window1"></div>
+        <div class="window2"></div>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css card</title>
+    <style>
+        .card{
+            height: 300px;
+            width: 500px;
+            background-image: linear-gradient(45deg,red,green);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            border-radius: 20px;
+            align-items: center;
+            /* transform: scale(0.1); */
+        }
+        .card:hover{
+
+            /* rotate */
+
+            /* transform: rotate(360deg); */
+            /* transform: rotatex(360deg); */
+            /* transform: rotatey(360deg); */
+
+            /* scale */
+            
+            /* transform: scale(1.3); */
+            /* transform: scalex(1.3); */
+            /* transform: scaley(.5); */
+
+            /* skew */
+
+            /* transform: skew(20deg); */
+            /* transform: skewY(-20deg); */
+
+            /* when we are using two property together */
+
+            /* transform: rotatey(270deg);
+            rotate: 360deg;
+            scale: 1.4; */
+
+            /* translate */
+            /* transform: translate(-100px); */
+            /* transform: translate(100px,100px); */
+            transform: translatey(-100px,-100px);
+            
+            
+
+
+            transition: all 2s ease-in;
+
+        }
+
+        
+        body{
+            background-color: aqua;
+        }
+        .name{
+            
+            align-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font: size 75px;
+            color: darkgrey; 
+        }
+        span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="name">
+            <h1><span>Sw</span>asthik P B</h1>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

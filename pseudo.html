@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 70px;
+            
+        }
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:hover{
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 60px;
+        }
+        input:focus{
+            color:rgb(230, 18, 18);
+            background-color:black;
+            font-size: 50px;
+            
+        }
+        /* p:first-child
+        {
+            color: blue;
+            font-size: 30px;
+        }
+        p:last-child
+        {
+            color: aquamarine;
+            font-size: 30px;
+
+        } */
+        p:nth-child(even)
+        {
+            color: brown;
+            text-shadow: 30px;
+            font-size: 30px;
+        }
+        p:nth-child(odd)
+        {
+            color: orangered;
+            text-shadow: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <a href="https://www.google.co.in/"> <b>google</b></a> <br>
+    <a href="https://www.facebook.com/login/"> Facebook</a> <br>
+    <a href="https://www.instagram.com/accounts/login/">Instagram</a> <br>
+    <a href="https://web.telegram.org/">Telegram</a> <br>
+    Enter Name: <input type="text" name="" id="">
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    
+</body>
+</html>

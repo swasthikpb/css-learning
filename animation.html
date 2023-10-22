@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: green;
+            border:red solid 2px;
+            animation: move 3s ease infinite;
+            border-radius: 20px;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation: flip_box 4s ease-in-out infinite alternate;
+            position: absolute;
+            /* margin-top: 300px; */
+            box-shadow: 20px 10px 10px black;
+        }
+        /* @keyframes move {
+            from{
+                width: 250px;
+            }
+            to{
+                width: 100%;
+                background-color: yellow;
+                border: 2px rgb(239, 9, 66) solid;
+            }
+            
+        } */
+        /* @keyframes flip_box {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1100px;
+                transform: rotate(360deg);
+                border-radius: 50%;
+            }
+        } */
+            @keyframes flip_box {
+
+            0%{
+                /* left: 0;
+                top: 0; */
+                left: 0;
+                top: 440px;
+                
+            }
+            25%{
+                /* left: 1000px;
+                top: 0; */
+                top: 0;
+                left: 300px;
+               
+            }
+            50%{
+                /* left: 1000px;
+                top: 500px; */
+                transform: rotate(180deg);
+                border-radius: 50%;
+                top: 445px;
+                left: 600px;
+            }
+            75%{
+                /* left: 0%;
+                top: 500px; */
+                transform: rotate(-360deg);
+                top: 0;
+                left: 1070px;
+            }
+            100%{
+                /* left: 0;
+                top: 0; */
+                transform: rotate(180deg);
+                top: 440px;
+                left: 1285px;
+            }
+                
+                
+            }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

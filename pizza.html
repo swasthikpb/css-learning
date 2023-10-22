@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pizza-task2.css">
+    <style>
+    #frame{
+        top: 70px;
+        left: 300px;
+        height: 600px;
+        width: 600px;
+        position: relative;
+    }
+    #full-piza{
+         z-index: 1;
+    }
+    .piz{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        height: 600px;
+        width: 600px;
+        border-radius: 50%;
+        background-image:conic-gradient(rgb(163, 98, 6)0deg 240deg, transparent 240deg 300deg ,  rgb(163, 98, 6)300deg 360deg);
+        
+    }
+    .piz1{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        height:500px;
+        width: 500px;
+        border-radius: 50%;
+        background-image: conic-gradient(rgb(255, 178, 71) 0deg 240deg, transparent 240deg 300deg,  rgb(255, 178, 71) 300deg 360deg);
+    }
+    
+    #sliced-pizza{
+        z-index:-1 ;
+    }
+    .piz11{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50% , -50%);
+        height: 600px;
+        width: 600px;
+        border-radius: 50%;
+        background-image:conic-gradient( transparent 240deg, rgb(163, 98, 6) 240deg 300deg ,  transparent 300deg 360deg);
+    }
+    .piz22{
+        position:absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50% , -50%);
+        cursor: pointer;
+        height:500px;
+        width: 500px;
+        border-radius: 50%;
+        background-image: conic-gradient(transparent 0deg 240deg, rgb(255, 178, 71) 240deg 300deg, transparent 300deg 360deg);
+    }
+    .olive{
+        position:absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        cursor: pointer;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-image: conic-gradient(black 0deg 360deg);
+    }
+    .tra{
+        position:absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      background-image: radial-gradient(circle, rgb(255, 178, 71), rgb(255, 178, 71));
+    }
+    .olive {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-image: radial-gradient(transparent 22px, rgb(80, 78, 78) 10px);
+        box-shadow: 0px 0px 0px 2px rgb(7, 7, 7);
+    }
+    
+    #l1 {
+        position: absolute;
+        top: 25% ;
+        left: 30% ;
+        transform: translate(-50%, -50%);
+    }
+    
+    #l2 {
+        position: absolute;
+        top: 78% ;
+        left: 60% ;
+        transform: translate(-50%, -50%);
+    }
+    #l3 {
+        position: absolute;
+        top: 52% ;
+        left: 15% ;
+        transform: translate(-50%, -50%);
+    }
+    #l4{
+        position: absolute;
+        top: 30% ;
+        left: 65% ;
+        transform: translate(-50%, -50%);
+    }
+    #l5 {
+        position: absolute;
+        top: 55% ;
+        left: 80% ;
+        transform: translate(-50%, -50%);
+    }
+    #l6 {
+        position: absolute;
+        top: 73% ;
+        left: 30% ;
+        transform: translate(-50%, -50%);
+    }
+    .onion {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-image: radial-gradient(transparent 32px, pink 10px);
+        box-shadow: 0px 0px 0px 2px rgb(215, 87, 109);
+    }
+    #o1{
+        position: absolute;
+        top: 22% ;
+        left: 50% ;
+        transform: translate(-50%, -50%);
+    
+    }
+    #o2{
+        position: absolute;
+        top:50% ;
+        left: 60%;
+        transform: translate(-50%,-50%);
+    
+    }
+    #o3{
+         position: absolute;
+        top:45% ;
+        left: 80%;
+        transform: translate(-50%,-50%);
+    }
+    #o4{
+         position: absolute;
+        top:72% ;
+        left: 74%;
+        transform: translate(-50%,-50%);
+    }
+    #o5{
+         position: absolute;
+        top:45% ;
+        left:7%;
+        transform: translate(-50%,-50%);
+    }
+    #o6{
+         position: absolute;
+        top:75% ;
+        left:44%;
+        transform: translate(-50%,-50%);
+    }
+    .paneer{
+        width: 50px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: antiquewhite;
+        box-shadow: 0px 0px 5px 1px rgb(237, 237, 237);
+    }
+    #p1{
+         position: absolute;
+        top:35% ;
+        left:44%;
+        transform: translate(-50%,-50%);
+    }
+    #p2{ 
+        position: absolute;
+        top:76% ;
+        left:24%;
+        transform: translate(-50%,-50%);
+    }
+    #p3{
+        position: absolute;
+        top:50% ;
+        left:27%;
+        transform: translate(-50%,-50%);
+    }
+    #p4{
+        position: absolute;
+        top:62% ;
+        left:80%;
+        transform: translate(-50%,-50%);
+    }
+    #p5{
+        position: absolute;
+        top:30% ;
+        left:79%;
+        transform: translate(-50%,-50%);
+    }
+    #p6{
+         position: absolute;
+        top:65% ;
+        left:59%;
+        transform: translate(-50%,-50%);
+    }
+    #p7{
+         position: absolute;
+        top:15% ;
+        left:53%;
+        transform: translate(-50%,-50%);
+    }
+    #p8{
+         position: absolute;
+        top:60% ;
+        left:9%;
+        transform: translate(-50%,-50%);
+    }
+    #p9{
+         position: absolute;
+        top:84% ;
+        left:54%;
+        transform: translate(-50%,-50%);
+    }
+    #p10{
+         position: absolute;
+        top:45% ;
+        left:54%;
+        transform: translate(-50%,-50%);
+    }
+    .corn {
+        width: 28px;
+        height: 35px;
+        background-color: rgb(255, 247, 0);
+        box-shadow: 0px 0px 10px 3px rgb(226, 215, 91) inset;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 90%;
+        border-bottom-right-radius: 90%;
+    }
+    
+    #c1 {
+        position: absolute;
+        top: 15% ;
+        left: 63% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(50deg);
+    } 
+    
+    #c2 {
+        position: absolute;
+        top: 28% ;
+        left: 59% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(180deg);
+    } 
+    
+    #c3 {
+        position: absolute;
+        top: 55% ;
+        left: 64% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(90deg);
+    } 
+    
+    #c4 {
+        position: absolute;
+        top: 43% ;
+        left: 79% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(75deg);
+    } 
+    
+    #c5 {
+        position: absolute;
+        top: 42% ;
+        left: 6% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(120deg);
+    } 
+    
+    #c6 {
+        position: absolute;
+        top: 54%;
+        left: 20% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(50deg);
+    } 
+    
+    #c7 {
+        position: absolute;
+        top: 73% ;
+        left: 43% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(10deg);
+    } 
+    
+    #c8 {
+        position: absolute;
+        top: 68% ;
+        left: 74% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(-15deg);
+    } 
+    
+    #c9 {
+        position: absolute;
+        top: 83% ;
+        left: 38% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(45deg);
+    } 
+    
+    #c10 {
+        position: absolute;
+        top: 55% ;
+        left: 46% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(-95deg);
+    } 
+    
+    #c11 {
+        position: absolute;
+        top: 31% ;
+        left: 41.5% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(135deg);
+    } 
+    
+    #c12 {
+        position: absolute;
+        top: 60% ;
+        left: 38% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(-45deg);
+    } 
+    
+    #c13 {
+        position: absolute;
+        top: 69% ;
+        left: 53% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(45deg);
+    } 
+    #c14 {v
+        position: absolute;
+        top: 19% ;
+        left: 23% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(45deg);
+    } 
+    #c15 {
+        position: absolute;
+        top: 44% ;
+        left: 58% ;
+        transform: translate(-50%, -50%);
+        transform: rotate(45deg);
+    } 
+    .green{
+        width: 14px;
+        height: 70px;
+        border-radius: 2px;
+        background-color: rgb(32, 151, 11);
+        box-shadow: 0px 0px 5px 1px rgb(43, 42, 42);
+    }
+    #g1{
+        position: absolute;
+        top:32% ;
+        left:84%;
+        transform: translate(30%,20%);
+        transform: rotate(15deg);
+    }
+    #g2{
+        position: absolute;
+        top:30% ;
+        left:30%;
+        transform: translate(-50%,-50%);
+        transform: rotate(120deg);
+    }
+    #g3{
+        position: absolute;
+        top:47% ;
+        left:4%;
+        transform: translate(-10%,-80%); 
+        transform: rotate(15deg);
+    }
+    #g4{
+        position: absolute;
+        top:14% ;
+        left:40%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(15deg);
+    }
+    #g5{
+        position: absolute;
+        top:75% ;
+        left:34%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(40deg); 
+    }
+    #g6{
+        position: absolute;
+        top:48% ;
+        left:60%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(60deg); 
+    }
+    #g7{
+        position: absolute;
+        top:18% ;
+        left:72%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(70deg);
+    }
+    #g8{
+        position: absolute;
+        top:79% ;
+        left:64%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(60deg);
+    }
+    #g9{
+        position: absolute;
+        top:65% ;
+        left:48%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(15deg);
+    }
+    #g10{
+        position: absolute;
+        top:66% ;
+        left:70%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(120deg);
+    }
+    #g11{
+        position: absolute;
+        top:33% ;
+        left:52%;
+        transform: translate(-50%,-50%); 
+        transform: rotate(95deg);
+    }
+    </style>
+
+</head>
+<body>
+<div id="frame">
+    <!--pizza-->
+    <div id="full-pizza">
+        <div class="piz"> </div>
+        <div class="piz1"></div>
+    </div>
+    <div id="sliced-pizza">
+        <div class="piz11"></div>
+         <div class="piz22"></div>
+    </div>
+    <!--toppings-->
+    <!--olive-->
+    <div class="olive" id="l1"></div>
+    <div class="olive" id="l2"></div>
+    <div class="olive" id="l3"></div>
+    <div class="olive" id="l4"></div>
+    <div class="olive" id="l5"></div>
+    <div class="olive" id="l6"></div>
+    <!--onion-->
+    <div class="onion" id="o1"></div>
+    <div class="onion" id="o2"></div>
+    <div class="onion" id="o3"></div>
+    <div class="onion" id="o4"></div>
+    <div class="onion" id="o5"></div>
+    <div class="onion" id="o6"></div>
+    <!--paneer-->
+    <div class="paneer" id="p1"></div>
+    <div class="paneer" id="p2"></div>
+    <div class="paneer" id="p3"></div>
+    <div class="paneer" id="p4"></div>
+    <div class="paneer" id="p5"></div>
+    <div class="paneer" id="p6"></div>
+    <div class="paneer" id="p7"></div>
+    <div class="paneer" id="p8"></div>
+    <div class="paneer" id="p9"></div>
+    <div class="paneer" id="p10"></div>
+    <!--corn-->
+    <div class="corn" id="c1"></div>
+    <div class="corn" id="c2"></div>
+    <div class="corn" id="c3"></div>
+    <div class="corn" id="c4"></div>
+    <div class="corn" id="c5"></div>
+    <div class="corn" id="c6"></div>
+    <div class="corn" id="c7"></div>
+    <div class="corn" id="c8"></div>
+    <div class="corn" id="c9"></div>
+    <div class="corn" id="c10"></div>
+    <div class="corn" id="c11"></div>
+    <div class="corn" id="c12"></div>
+    <div class="corn" id="c13"></div>
+    <div class="corn" id="c14"></div>
+    <div class="corn" id="c15"></div>
+    <!--green-->
+    <div class="green" id="g1"></div>
+    <div class="green" id="g2"></div>
+    <div class="green" id="g3"></div>
+    <div class="green" id="g4"></div>
+    <div class="green" id="g5"></div>
+    <div class="green" id="g6"></div>
+    <div class="green" id="g7"></div>
+    <div class="green" id="g8"></div>
+    <div class="green" id="g9"></div>
+    <div class="green" id="g10"></div>
+    <div class="green" id="g11"></div>
+</div>
+
+</body>
+</html>

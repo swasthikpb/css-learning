@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        div{
+            height: 250px;
+            width: 250px;
+            background-color: orangered;
+            margin: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .main{
+            height: 200vh;
+            width: 90%;
+            display: flex;
+            background-color: black;
+        }
+                     /* ABSOLUTE */
+
+        /* .main div:nth-child(3){
+            background-color: aqua;
+            position: absolute;
+            top: 150px;
+            left: 1500px;
+
+        } */
+                 /* RELATIVE */
+
+        /* .main div:nth-child(2){
+            background-color: aqua;
+            position: relative;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+
+        } */
+
+        /* STICKY */
+
+
+        /* .main div:nth-child(2){
+            background-color: aqua;
+            position: sticky;
+             top: 25px; */
+            /* bottom: 0px;  */
+            /* right: 200px; */
+            /* left: 250px;} */
+
+            /* FIXED */
+
+            
+            .main div:nth-child(4){
+            background-color: aqua;
+            position: fixed;
+             top: 0;
+             /* bottom: 0px;   */
+             right: 0; 
+             /* left: 0px; */
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+   </div> 
+    
+</body>
+</html>
